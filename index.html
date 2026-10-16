@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JEE Dost - Learn & Practice</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f6fc;color:#172554}
+header{background:#173b70;color:white;padding:24px 18px;border-radius:0 0 22px 22px}
+header h1{margin:0;font-size:30px}
+header p{color:#dbeafe}
+main{padding:16px;max-width:700px;margin:auto}
+h2{font-size:21px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.card{background:white;padding:15px 6px;text-align:center;border-radius:14px;box-shadow:0 2px 8px #dbe3f0}
+.card a{color:#173b70;text-decoration:none;font-weight:bold}
+.panel{background:white;padding:16px;border-radius:14px;margin-top:18px}
+button{background:#2563eb;color:white;border:0;padding:12px;border-radius:9px;font-size:15px;width:100%;margin-top:8px}
+.question{line-height:1.6}
+footer{text-align:center;padding:24px;color:#64748b;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>📘 JEE Dost</h1>
+<p>Your companion for JEE preparation</p>
+</header>
+<main>
+<h2>Choose Your Subject</h2>
+<div class="grid">
+<div class="card"><a href="#physics">⚛️<br>Physics</a></div>
+<div class="card"><a href="#chemistry">🧪<br>Chemistry</a></div>
+<div class="card"><a href="#maths">📐<br>Maths</a></div>
+</div>
+
+<section class="panel" id="physics">
+<h2>⚛️ Physics</h2>
+<p>Formula: F = ma</p>
+<p>Formula: V = IR</p>
+<p>Formula: K.E. = ½mv²</p>
+</section>
+
+<section class="panel" id="chemistry">
+<h2>🧪 Chemistry</h2>
+<p>Study atomic structure, periodic table and chemical bonding.</p>
+<p>Valency: combining capacity of an atom.</p>
+</section>
+
+<section class="panel" id="maths">
+<h2>📐 Mathematics</h2>
+<p>Quadratic equation: ax² + bx + c = 0</p>
+<p>Discriminant: D = b² − 4ac</p>
+</section>
+
+<section class="panel">
+<h2>📝 Daily Practice</h2>
+<div class="question">
+<p><b>Q1.</b> A force of 10 N acts on a 2 kg object. Find its acceleration.</p>
+<button onclick="document.getElementById('ans').hidden=false">Show Answer</button>
+<p id="ans" hidden><b>Answer:</b> a = F/m = 10/2 = 5 m/s²</p>
+</div>
+</section>
+</main>
+<footer>Made with ❤️ for JEE aspirants | JEE Dost</footer>
+</body>
+</html>
